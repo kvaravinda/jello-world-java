@@ -6,5 +6,10 @@ pipeline{
                 git 'https://github.com/kvaravinda/jello-world-java'
             }
         }
+        stage("maven build"){
+            steps{
+                sh "mvn clean package"
+        }
+    }
     }
 }
