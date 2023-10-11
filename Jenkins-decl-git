@@ -1,3 +1,4 @@
+currentBuild.displayName = "mywebapp-#"+currentBuild.number
 pipeline{
     agent any
     stages{
